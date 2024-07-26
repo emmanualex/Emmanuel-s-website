@@ -1,4 +1,5 @@
-/* Basic styles */
+
+
 body {
     font-family: sans-serif;
     margin: 0;
@@ -12,31 +13,45 @@ header, nav, main, footer {
     padding: 20px;
 }
 
-/* Header styles */
+
 header h1 {
     font-size: 2em;
+    margin: 0; 
 }
 
-/* Navigation styles */
+
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex; 
 }
 
 nav li {
-    display: inline-block;
     margin-right: 20px;
+}
+
+nav li:last-child {
+    margin-right: 0; 
 }
 
 nav a {
     text-decoration: none;
     color: black;
+    transition: color 0.3s; 
 }
 
-/* Main content styles */
+nav a:hover {
+    color: grey; 
+}
+
+
 main {
-    flex: 1; /* Take up all remaining space */
+    flex: 1; 
+    width: 100%; 
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px; 
 }
 
 main section {
@@ -53,7 +68,8 @@ main img {
     margin-bottom: 20px;
 }
 
-/* Footer styles */
+
 footer p {
     font-size: 0.8em;
+    margin: 0;
 }
